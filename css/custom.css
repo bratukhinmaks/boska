@@ -219,11 +219,11 @@ h1.contacts_title {
 
 @media screen and (max-width: 768px) {
     .main-slide {
-        height: 550px!important; ;
+        height: 450px!important; ;
     }
     .slider-item img {
         width:100%;
-        height: 550px !important;
+        height: 450px !important;
     }
     .about-us-wrapper {
         margin: 100px auto!important;
