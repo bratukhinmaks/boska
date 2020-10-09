@@ -217,7 +217,7 @@ h1.contacts_title {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .main-slide {
         height: 550px!important; ;
     }
