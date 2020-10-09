@@ -139,10 +139,7 @@ h1.menu_title {
     max-height: 550px;
 } 
 
-.contacts {
-    color: white;
-    text-shadow: 2.3px 2.3px 1px #181717;
-}
+
 
 h1.contacts_title {
     font-size: 55px;
@@ -150,20 +147,22 @@ h1.contacts_title {
 }
 
 .contacts_left h4 {
+    font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .contacts_left p {
+    font-size: 30px;
     font-weight: 500;
 }
 
 
 .contacts_right h4 {
     font-size: larger;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .contacts_right li {
@@ -316,5 +315,57 @@ h1.contacts_title {
 .about-us-wrapper {
     width:80%;
     margin: 100px auto 200px;
+    text-align: center;
+}
+
+.text-contact {
+    color: white;
+    font-weight: bold;
+    text-shadow: 5px 5px 15px #4e4e4e;
+}
+
+#loader {
+   margin: 150px auto;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #000000;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 }
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
+    to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+    display: none;
     text-align: center;
 }
